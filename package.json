@@ -1,0 +1,25 @@
+{
+  "name": "@sigmatelecom/zoho-js",
+  "version": "1.0.0",
+  "description": "zoho helper package",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softwaresigma/zoho-JS.git"
+  },
+  "keywords": [
+    "zoho"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softwaresigma/zoho-JS/issues"
+  },
+  "homepage": "https://github.com/softwaresigma/zoho-JS#readme"
+}
