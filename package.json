@@ -1,5 +1,5 @@
 {
-  "name": "@sigmatelecom/zoho-js",
+  "name": "@sigmasoftwares/zoho-js",
   "version": "1.0.1",
   "description": "zoho helper package",
   "main": "index.js",
@@ -16,7 +16,7 @@
   "keywords": [
     "zoho"
   ],
-  "author": "",
+  "author": "emrekucuk",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/softwaresigma/zoho-JS/issues"

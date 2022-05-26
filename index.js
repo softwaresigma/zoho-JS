@@ -4,6 +4,7 @@ const QNTRL = require("./qntrl/index");
 const Books = require("./books/index");
 const Expense = require("./expense/index");
 const Desk = require("./desk/index");
+const Calendar = require("./calendar/index");
 const Zoho = require("./zoho/auth.zoho");
 
 module.exports = {
@@ -13,5 +14,6 @@ module.exports = {
     Books,
     Expense,
     Desk,
+    Calendar,
     Zoho
 };
