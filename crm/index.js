@@ -22,6 +22,24 @@ class CRM extends ZohoAuth {
                 console.error(e.message);
         }
     }
+
+    /**
+     * 
+     * 
+     * 
+     * 
+     */
+     async getAccoounts(page){
+
+        try {
+            return await this.customRequest(`https://www.zohoapis.com/crm/v2/Accounts`, "GET",{"page":page});
+        } catch (error) {
+            if (error.response !== undefined)
+                console.error(error.response.data);
+             else
+                console.error(error.message);
+            }
+        }       
 }
 
 module.exports = CRM;

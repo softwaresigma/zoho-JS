@@ -22,9 +22,9 @@ class Calendar extends ZohoAuth {
         }
     }
 
-    async getCalendarDetails() {
+    async getCalendarDetails(org_id) {
         try {
-            return await this.customRequest(`https://calendar.zoho.com/api/v1/calendars/7f2603c1daf64c9681da247091d02416`, "GET");
+            return await this.customRequest(`https://calendar.zoho.com/api/v1/calendars/${org_id}`, "GET");
         } catch (e) {
             if (e.response !== undefined)
                 console.error(e.response.data);
