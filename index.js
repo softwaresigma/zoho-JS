@@ -5,6 +5,7 @@ const Books = require("./books/index");
 const Expense = require("./expense/index");
 const Desk = require("./desk/index");
 const Calendar = require("./calendar/index");
+const CRM = require("./crm/index");
 const Zoho = require("./zoho/auth.zoho");
 
 module.exports = {
@@ -15,5 +16,6 @@ module.exports = {
     Expense,
     Desk,
     Calendar,
-    Zoho
+    Zoho,
+    CRM
 };
