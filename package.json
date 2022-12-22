@@ -1,6 +1,6 @@
 {
   "name": "@sigmasoftwares/zoho-js",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "zoho helper package",
   "main": "index.js",
   "directories": {
