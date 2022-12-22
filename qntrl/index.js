@@ -209,6 +209,22 @@ class QNTRL extends ZohoAuth {
                 console.error(e.message);
         }
     }
+
+
+    //"sigmagroup",title,"6336000001588207",description,layoutid,duedate,slink,amount,currency_id
+    async createJobStock(org_id,title,record_owner,layout_id,description,due_date, slink, amount, currency_id) {
+        try {
+            var out = encodeURI(`https://coreapi.qntrl.com/blueprint/api/${org_id}/job?title=${title}&record_owner=${record_owner}&layout_id=${layout_id}&description=${description}&duedate=${due_date}&customfield_longtext4=${slink}&customfield_decimal2=${amount}&customfield_dropdown11=${currency_id}`);
+            console.log(out)
+            return await this.customRequestRevo(out, "POST");
+        } catch (e) {
+            if (e.response !== undefined)
+                console.error(e.response.data);
+            else
+                console.error(e.message);
+        }
+    }
 }
+
 
 module.exports = QNTRL;
