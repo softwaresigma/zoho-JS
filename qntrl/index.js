@@ -212,9 +212,9 @@ class QNTRL extends ZohoAuth {
 
 
     //"sigmagroup",title,"6336000001588207",description,layoutid,duedate,slink,amount,currency_id
-    async createJobStock(org_id,title,record_owner,layout_id,description,due_date, slink, amount, currency_id) {
+    async createJobStock(org_id,title,record_owner,layout_id,description,due_date, slink, amount, currency_id, toWho) {
         try {
-            var out = encodeURI(`https://coreapi.qntrl.com/blueprint/api/${org_id}/job?title=${title}&record_owner=${record_owner}&layout_id=${layout_id}&description=${description}&customfield_shorttext69=${due_date}&customfield_longtext4=${slink}&customfield_decimal2=${amount}&customfield_dropdown11=${currency_id}`);
+            var out = encodeURI(`https://coreapi.qntrl.com/blueprint/api/${org_id}/job?title=${title}&record_owner=${record_owner}&layout_id=${layout_id}&description=${description}&customfield_shorttext69=${due_date}&customfield_longtext4=${slink}&customfield_decimal2=${amount}&customfield_dropdown11=${currency_id}&customfield_shorttext78=${toWho}`);
             console.log(out)
             return await this.customRequestRevo(out, "POST");
         } catch (e) {
